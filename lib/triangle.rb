@@ -8,8 +8,7 @@ class Triangle
   def error_handle
     begin
       raise TriangleError
-    rescue TriangleError => error
-        puts "gotcha"
+    rescue TriangleError => raise TriangleError
     end
   end
 
