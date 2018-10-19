@@ -8,8 +8,8 @@ class Triangle
   def error_handle
     begin
       raise TriangleError
-    rescue TriangleError => error
-        raise TriangleError
+#    rescue TriangleError => error
+#        puts error.message
     end
   end
 
@@ -34,5 +34,8 @@ class Triangle
   end
 
   class TriangleError < StandardError
+    def message
+      "Illegal triangle length combination"
+    end
   end
 end
